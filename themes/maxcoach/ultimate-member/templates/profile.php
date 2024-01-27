@@ -119,6 +119,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			$composeBtn = '<a id="compose" href="'.$login_link.'" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-bounce-in" role="button"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">Message</span></span></a>';
 		} else {
 			$compose_url = '';
+			$composeBtn = '';
 			
 			
 			 if ($current_username != $profile_username) {
