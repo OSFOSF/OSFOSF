@@ -1,0 +1,71 @@
+.learn-press-tabs {
+	margin: 0 0 30px;
+
+	.learn-press-tabs__checker {
+		display: none;
+	}
+}
+
+.learn-press-tabs .learn-press-tabs__nav {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #eee;
+	list-style: none;
+}
+
+.learn-press-tabs .learn-press-tabs__tab {
+	position: relative;
+	margin: 0;
+	list-style: none;
+}
+
+.learn-press-tabs .learn-press-tabs__tab > label {
+	display: block;
+	margin: 0;
+	padding: 8px 10px;
+	font-size: 14px;
+	text-align: start;
+	cursor: pointer;
+}
+
+.learn-press-tabs .learn-press-tabs__tab > label a {
+	color: inherit;
+}
+
+.learn-press-tabs .learn-press-tabs__tab::after {
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: $primary-color;
+	content: "";
+	opacity: 0;
+}
+
+.learn-press-tabs .learn-press-tabs__tab.active::after {
+	opacity: 1;
+}
+
+.learn-press-tabs .learn-press-tabs__tab:first-child.active label {
+	position: relative;
+}
+
+.learn-press-tabs .learn-press-tabs__tab:first-child.active label::before {
+	position: absolute;
+	top: 0;
+	left: -1px;
+	width: 1px;
+	height: 100%;
+	background: #fff;
+	content: "";
+}
+
+.learn-press-tabs.stretch .learn-press-tabs__tab {
+	flex: 1;
+}
+
+.learn-press-tabs.stretch .learn-press-tabs__tab > label {
+	padding: 18px 10px;
+}

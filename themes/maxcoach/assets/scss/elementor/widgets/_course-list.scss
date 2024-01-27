@@ -1,0 +1,158 @@
+.maxcoach-course-list {
+	.course-title {
+		margin: 0;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	.course-thumbnail {
+		img {
+			width: 100%;
+		}
+	}
+
+	.meta-icon {
+		display: none;
+	}
+
+	.course-price-box {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		margin: 11px 0 0;
+	}
+
+	.course-price {
+		color: $primary-color;
+		font-size: 18px;
+		font-weight: 700;
+		margin: 0 10px 0 0;
+	}
+
+	.course-meta {
+		flex-wrap: wrap;
+		margin: -5px;
+	}
+
+	.meta-item {
+		font-size: 14px;
+		line-height: 24px;
+		padding: 4px 12px;
+		border-radius: 32px;
+		background: #f5f5f5;
+		color: #000;
+		margin: 5px;
+	}
+
+	.featured-course {
+		.maxcoach-image {
+			margin: 0 0 20px;
+		}
+
+		.course-price-box {
+			margin: 13px 0 0;
+		}
+
+		.course-title {
+			font-size: 32px;
+			line-height: 1.375;
+		}
+
+		.course-price {
+			font-size: 24px;
+		}
+
+		.course-excerpt {
+			font-size: 16px;
+			line-height: 26px;
+			margin: 16px 0 0;
+		}
+	}
+
+	.normal-courses {
+		margin: 0 0 0 40px;
+		border: 1px solid #eee;
+		border-radius: 5px;
+
+		.course {
+			position: relative;
+
+			+ .course {
+				border-top: 1px solid #eee;
+			}
+
+			&:hover {
+				z-index: 2;
+
+				&:before {
+					transform: scale(1) translateY(0) translateZ(0);
+					opacity: 1;
+				}
+			}
+
+			&:before {
+				display: block;
+				content: '';
+				position: absolute;
+				top: -1px;
+				bottom: -1px;
+				left: -10px;
+				right: -10px;
+				transform-origin: center;
+				transform: scale(.9) translateY(0) translateZ(0);
+				opacity: 0;
+				box-shadow: 0 20px 30px rgba(0, 0, 0, .07);
+				background-color: #fff;
+				border-radius: 5px;
+				transition: all .15s cubic-bezier(.2, .75, .5, 1);
+			}
+		}
+
+		.course-wrapper {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			padding: 30px;
+		}
+
+		.maxcoach-image {
+			flex-shrink: 0;
+			max-width: 40%;
+			margin: 0 20px 0 0;
+		}
+
+		.course-info {
+			flex-grow: 1;
+		}
+
+		.course-title {
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	}
+}
+
+.course-caption-meta-icon-yes {
+	.maxcoach-course-list .meta-icon {
+		display: block;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.maxcoach-course-list {
+		.normal-courses {
+			margin: 30px 0 0;
+
+			.course-wrapper {
+				padding: 15px 10px;
+			}
+
+			.course-title {
+				font-size: 18px;
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.btn-back-to-class {
+	margin: 0 0 30px;
+}
+
+// Fix with woo
+.course-price {
+	.price {
+		color: inherit;
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
+
+.learnpress {
+	.learn-press-progress {
+		.progress-bg {
+			background: #eee;
+		}
+	}
+
+	.lp-label {
+		height: 28px;
+		line-height: 28px;
+		padding: 0 10px;
+		border-radius: 5px;
+		margin-right: 6px;
+		background: #111;
+		color: #fff;
+	}
+
+	.lp-label.label-enrolled,
+	.lp-label.label-started {
+		background: #111;
+	}
+}
+
+.learn-press-content-protected-message {
+	border-radius: 5px;
+	background: #fff4f6 !important;
+	color: #696969;
+	padding: 27px 20px !important;
+	font-weight: 500;
+}
+
+.learnpress.learnpress-page {
+	.lp-button {
+		height: 52px;
+		line-height: 50px;
+		padding: 0 41px;
+	}
+}
+
+.learnpress {
+	.answer-options {
+		.answer-option {
+
+			input[type="checkbox"],
+			input[type="radio"] {
+				position: relative;
+				padding: 5px;
+				margin: 0 10px 0 3px;
+				cursor: pointer;
+				width: unset;
+				height: unset;
+				min-width: 0;
+				border: 0;
+				z-index: 0;
+				background: transparent;
+				border-radius: 0;
+
+				&:after {
+					border: 0;
+					display: block;
+					width: 8px;
+					height: 8px;
+					transform: translate(-50%, -50%) scale(0);
+					left: 50%;
+					opacity: 1;
+					margin: 0;
+				}
+
+				&:checked:after {
+					transform: translate(-50%, -50%) scale(1);
+				}
+			}
+		}
+	}
+}
