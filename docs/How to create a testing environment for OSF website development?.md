@@ -5,7 +5,7 @@ Suppose you will visit your WP locally via http://localhost:8779,
 
 1. Follow [Podman Installation | Podman](https://podman.io/docs/installation#installing-on-linux) to install podman on Linux.
 2. Contact Coiby for access to OSF database, theme and plugins
-2. Download [wp-create-legacy.sh](scripts/wp-create-legacy.sh) which will create a pod, 3 containers, 3 volumes and a secret and use it to create a group of containers. Execute the script with 4 arguments i.e. the name of pod, the port, the path to database and the path of the folder of wp-content
+2. Download [wp-create-legacy.sh](/scripts/wp-create-legacy.sh) which will create a pod, 3 containers, 3 volumes and a secret and use it to create a group of containers. Execute the script with 4 arguments i.e. the name of pod, the port, the path to database and the path of the folder of wp-content
 ```sh
 $ bash wp-create-legacy.sh OSF 8779 /tmp//_osfdb.sql ~/osf_backups/wp-content
 
