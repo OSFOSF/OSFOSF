@@ -1,5 +1,7 @@
 
-The OSF website is built using WordPress. This guide shows how to create a WP instance for local website development on Linux (in theory, it should work for Windows and Mac as well but it hasn't been tested) using podman. Suppose you will visit your WP locally via http://localhost:8779
+The OSF website is built using WordPress. This guide shows how to create a WP instance for local website development on Linux (in theory, it should work for Windows and Mac as well but it hasn't been tested) using podman. If you have another way to create a WP instance locally, you can skip the following content and simply ask Coiby for access to OSF data.
+
+Suppose you will visit your WP locally via http://localhost:8779,
 
 1. Follow [Podman Installation | Podman](https://podman.io/docs/installation#installing-on-linux) to install podman on Linux.
 2. Contact Coiby for access to OSF database, theme and plugins
